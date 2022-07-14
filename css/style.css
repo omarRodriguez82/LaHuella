@@ -1,0 +1,555 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "nunito";
+  list-style: none;
+  text-decoration: none;
+}
+
+/*body grid*/
+
+body{
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+}
+
+header{
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+}
+
+/*---header---*/
+
+.menu{
+  display: flex;
+  height: 3rem;
+  font-size: 1.1rem;
+  background-color: rgba(170, 136, 84, 0.89);
+  align-items: center;
+  justify-content: space-around;
+}
+
+header nav ul{
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul li a{
+  color: white;
+}
+
+.menuHamburguesa{
+  display: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.redes ul{
+  display: flex;
+  gap: 2rem; 
+}
+
+.redes ul li a{
+  color: white;
+  font-size: 1.1rem;
+}
+
+.texto{
+  font-size: 1rem;
+  padding: 1.1rem;
+  width: 25rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.carrito a{
+  color: white;
+  font-size: 1rem;
+}
+
+/*---main index---*/
+
+.main{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "mainImagen"
+                       "mainTexto"
+                       "mainVideo";
+  font-size: 1.1rem;
+}
+
+.mainImagen{
+  grid-area: mainImagen;
+}
+
+.mainImagen img{
+  width: 100%;
+}
+
+.imgMainProductos img{
+  width: 100%;  
+}
+
+.mainTexto{
+  grid-area: mainTexto;
+}
+
+.mainVideo{
+  grid-area: mainVideo;
+}
+
+.mainTexto{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "tituloMainTexto tituloMainTexto tituloMainTexto"
+                       "parrafo1MainTexto parrafo2MainTexto parrafo3MainTexto";
+  justify-content: space-around;
+}
+
+.tituloMainTexto{
+  grid-area: tituloMainTexto;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.parrafo1MainTexto{
+  grid-area: parrafo1MainTexto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.parrafo2MainTexto{
+  grid-area: parrafo2MainTexto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.parrafo3MainTexto{
+  grid-area: parrafo3MainTexto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.mainVideo{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.mainVideo iframe{
+  width: 1360px;
+  height: 768px;
+}
+
+/*--- quienesSomos ---*/
+
+.mainQuienesSomos{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "inicio"
+                       "galeria";
+}
+
+.inicio{
+  grid-area: inicio;
+}
+
+.inicio img{
+  width: 100%;
+}
+
+.bloque-inicio{
+  position: absolute;
+  top: 10rem;
+  text-align: center;
+  align-items: center;
+}
+
+.bloque-inicio h1{
+  color: white;
+  font-size: 5rem;
+}
+
+.bloque-inicio p{
+  color: white;
+  font-size: 2rem;
+}
+
+.galeria{
+  grid-area: galeria;
+}
+  
+.galeria{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "galVacas galCerdos galCaballos galConejos";
+  padding: 1rem;
+  background-image: linear-gradient(to top, rgba(170, 136, 84, 0.89), white);
+}
+
+.galVacas{
+  grid-area: galVacas;
+}
+
+.galCerdos{
+  grid-area: galCerdos;
+}
+
+.galCaballos{
+  grid-area: galCaballos;
+}
+
+.galConejos{
+  grid-area: galConejos;
+}
+
+.galeria img{
+  width: 100%;
+  padding: 1rem;
+  filter: grayscale(100%);
+}
+
+.galeria img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+/*--- Contacto ---*/
+
+.divContacto{
+  display: flex;
+  justify-content: center;
+}
+
+.fieldsetContacto{
+  min-width: 60rem;
+  margin: 2rem;
+  padding: 2rem;
+  border: 0.15rem solid rgba(170, 136, 84, 0.89);
+  border-radius: 1.5rem;
+}
+
+.legendContacto{
+  font-size: 2rem;
+  color: black;
+  padding: 0.3rem;
+}
+
+.tituloCampoContacto{
+  font-size: 1rem;  
+  color: black;
+}
+
+.inputContacto{
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  width: 100%;
+}
+
+.botones{
+  display: flex;
+  justify-content:space-between;
+}
+
+.limpiar, .enviar{
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: white;
+  background-color:rgba(170, 136, 84, 0.89);
+  border: none;
+  border-radius: 0.75rem;
+}
+
+/*--- main de Bobinos, Porcinos, Equinos y conejos ---*/
+
+.mainProductos{
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-rows: auto auto;
+  grid-template-areas: "imgMainProductos"
+                       "textoMainProductos";
+  justify-content: space-around;
+}
+
+.imgMainProductos{
+  grid-area: imgMainProductos;
+}
+
+.textoMainProductos{
+  grid-area: textoMainProductos;
+}
+
+.imgMainProductos img{
+  width: 100%;
+}
+
+.tituloBPE{
+  font-size: 3.5rem;
+  margin: 1rem;
+  color:rgba(170, 136, 84, 0.89);
+  text-align: center;
+}
+
+.parrafoBPE{
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  margin: 3rem;
+}
+
+/*--- boton whatsapp ---*/
+
+.whatsapp{
+  position:fixed;
+  width:4rem;
+  height:4rem;
+  line-height: 4rem;
+  bottom:2rem;
+  right:2rem;
+  background:rgba(58, 41, 17, 0.89);
+  color:#FFF;
+  border-radius:2rem;
+  text-align:center;
+  font-size:2.5rem;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 500ms ease;
+}
+
+.whatsapp:hover{
+  background: #25d366;
+}
+
+/*--- footer ---*/
+
+.divFooter{
+  background-color: rgba(170, 136, 84, 0.89);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+
+.divLogoFooter{
+  display: flex;
+  background-color:white;
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  margin: 2rem;
+}
+
+.divLogoFooter img{
+  width: 100%;
+}
+
+.tienda{  
+  background-color:white;
+  width: 15rem;
+  height: 15rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  margin: 2rem;
+}
+
+.tituloTienda{
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tienda ul li{
+  text-align: center;
+  margin: 1rem;
+}
+
+.tienda ul li a{
+  color: black;  
+}
+
+.nosotros{  
+  background-color:white;
+  width: 15rem;
+  height: 15rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  margin: 2rem;
+}
+
+.tituloNosotros{
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.nosotros ul li{
+  text-align: center;
+  margin: 1rem;
+}
+
+.nosotros ul li a{
+  color: black;  
+} 
+
+.seguinosEn{  
+  background-color:white;
+  width: 15rem;
+  height: 15rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  margin: 2rem;
+}
+
+.tituloSeguinosEn{
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.seguinosEn ul li{
+ text-align: center;
+ margin: 1rem;
+}
+
+.seguinosEn ul li a{
+  color: black;
+} 
+
+.ayuda{  
+  background-color:white;
+  width: 15rem;
+  height: 15rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  margin: 2rem;
+}
+
+.tituloAyuda{
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.ayuda ul li{
+  text-align: center;
+  margin: 1rem;
+  color: black;
+}
+
+.copy{
+  color:white;
+  font-size: 0.8rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  text-align: center;
+  background-color: rgba(58, 41, 17, 0.89);
+}
+
+/*--- media queries ---*/
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+
+  /*--- header ---*/
+
+.menuHamburguesa{
+    display: block;
+  }
+
+  .redes, .nav1, .nav2{
+    display: none;
+  }
+
+  /*--- main index ---*/
+
+  .mainTexto{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "tituloMainTexto"
+                         "parrafo1MainTexto";
+    justify-content: center;
+  }
+
+  .parrafo3MainTexto, .parrafo2MainTexto{
+    display: none;
+  }
+  
+  .tituloMainTexto{
+    margin: 1rem;
+  }
+  
+  .parrafo1MainTexto{
+    padding: 1rem;
+  }
+
+  .mainVideo iframe{
+    width: 500px;
+    height: 200px;
+  }
+
+    /*--- main Quienes Somos ---*/
+
+    .bloque-inicio{
+      top: 3.5rem;
+    }
+    
+    .bloque-inicio h1{
+      font-size: 2rem;
+    }
+    
+    .bloque-inicio p{
+      font-size: 1.2rem;
+    }
+  
+    .galeria{   
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "vacas cerdos" 
+                           "caballos conejos";
+    }
+
+  /*--- contacto ---*/
+
+  .fieldsetContacto{
+    min-width: 28rem;
+  }
+
+  /*--- footer ---*/
+
+  .divLogoFooter, .tienda, .nosotros{
+    display: none;
+  }
+
+   /*--- whatsapp ---*/
+
+  .whatsapp{
+    bottom:1rem;
+    right:1rem;
+}
+
+}
+
