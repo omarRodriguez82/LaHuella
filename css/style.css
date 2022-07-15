@@ -157,6 +157,13 @@ header nav ul li a{
   height: 768px;
 }
 
+/*---aminacion para rama-uno---*/
+.tituloMainTexto:hover{
+  color: rgba(170, 136, 84, 0.89);
+  transform: scale(1.5);
+  transition: 3s;
+}
+
 /*--- quienesSomos ---*/
 
 .mainQuienesSomos{
