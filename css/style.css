@@ -448,7 +448,6 @@ header nav ul li a{
   background-color:white;
   width: 15rem;
   height: 15rem;
-  padding: 0.5rem;
   border: none;
   border-radius: 0.8rem;
   margin: 2rem;
@@ -457,7 +456,7 @@ header nav ul li a{
 .tituloTienda{
   font-size: 1.2rem;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .tienda ul li{
@@ -473,7 +472,6 @@ header nav ul li a{
   background-color:white;
   width: 15rem;
   height: 15rem;
-  padding: 0.5rem;
   border: none;
   border-radius: 0.8rem;
   margin: 2rem;
@@ -482,7 +480,7 @@ header nav ul li a{
 .tituloNosotros{
   font-size: 1.2rem;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .nosotros ul li{
@@ -498,7 +496,6 @@ header nav ul li a{
   background-color:white;
   width: 15rem;
   height: 15rem;
-  padding: 0.5rem;
   border: none;
   border-radius: 0.8rem;
   margin: 2rem;
@@ -507,7 +504,7 @@ header nav ul li a{
 .tituloSeguinosEn{
   font-size: 1.2rem;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .seguinosEn ul li{
@@ -523,7 +520,6 @@ header nav ul li a{
   background-color:white;
   width: 15rem;
   height: 15rem;
-  padding: 0.5rem;
   border: none;
   border-radius: 0.8rem;
   margin: 2rem;
@@ -532,7 +528,7 @@ header nav ul li a{
 .tituloAyuda{
   font-size: 1.2rem;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .ayuda ul li{
