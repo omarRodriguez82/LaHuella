@@ -41,6 +41,11 @@ footer{
   justify-content: space-around;
 }
 
+header nav ul li a:hover{
+  color:rgba(58, 41, 17, 0.89);
+  transition: 150ms;
+}
+
 header nav ul{
   display: flex;
   gap: 2rem;
@@ -66,6 +71,11 @@ header nav ul li a{
   font-size: 1.1rem;
 }
 
+.redes ul li a:hover{
+  color:rgba(58, 41, 17, 0.89);
+  transition: 150ms;
+}
+
 .texto{
   font-size: 1rem;
   padding: 1.1rem;
@@ -78,6 +88,11 @@ header nav ul li a{
 .carrito a{
   color: white;
   font-size: 1rem;
+}
+
+.carrito a:hover{
+  color:rgba(58, 41, 17, 0.89);
+  transition: 150ms;
 }
 
 /*---main index---*/
@@ -315,6 +330,70 @@ header nav ul li a{
   color: black;
   text-align: center;
   margin: 3rem;
+}
+
+/*--- boostrap + media queries aves.html ---*/
+
+.menu-bootstrap{
+  background-color: rgba(170, 136, 84, 0.89);
+}
+
+.menu-items-bootstrap{
+  padding: 0rem;
+  margin: 0rem;  
+  justify-content: center;
+}
+
+.menu-items-bootstrap a{
+  color: white;
+  font-size: 1.1rem;
+}
+
+.imgHeader img{ 
+  width: 30vh;
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+.navbar-nav{
+  align-items: center;
+}
+
+.tituloAves{
+  color: rgba(170, 136, 84, 0.89);
+}
+
+.divFooter-boostrap{
+  background-color: rgba(170, 136, 84, 0.89);
+}
+
+.logoFooter{
+  width: 75%;
+}
+
+.grillas-footer{
+  justify-content: center;
+}
+
+.titulosFooter{
+  color: rgba(58, 41, 17, 0.89);
+  font-weight:500
+}
+
+.copy-boostrap{
+  background-color: rgba(58, 41, 17, 0.89);
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+  .logoFooter{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 991px){
+
+  .facebook, .instagram, .twitter, .imgHeader{
+    display: none;
+  }
 }
 
 /*--- boton whatsapp ---*/
