@@ -61,6 +61,11 @@ header nav ul li a{
   font-size: 1.1rem;
 }
 
+.menuHamburguesa:hover{
+  color:rgba(58, 41, 17, 0.89);
+  transition: 150ms;
+}
+
 .redes ul{
   display: flex;
   gap: 2rem; 
@@ -549,6 +554,27 @@ header nav ul li a{
 
 @media screen and (min-width: 300px) and (max-width: 600px){
 
+  body{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";    
+  }
+
+  header{
+    grid-area: header;
+  }
+
+  main{
+    grid-area: main;
+  }
+
+  footer{
+    grid-area: footer;
+  }
+
+
   /*--- header ---*/
 
 .menuHamburguesa{
@@ -582,8 +608,8 @@ header nav ul li a{
   }
 
   .mainVideo iframe{
-    width: 500px;
-    height: 200px;
+    width: 450px;
+    height: 250px;
   }
 
     /*--- main Quienes Somos ---*/
