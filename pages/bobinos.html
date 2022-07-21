@@ -13,7 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/41c4037840.js" crossorigin="anonymous"></script>
   <link rel="icon" href="../img/favicon.png">
-  <link rel="stylesheet" href="../css/style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
   <title>Bobinos</title>
 </head>
 
@@ -24,106 +26,124 @@
   </a>
   
   <header>
-    <div class="menu">  
-      
-      <div class="menuHamburguesa">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+    <div class="container-fluid menu-bootstrap">
+      <nav class="navbar navbar-expand-lg nav-menu-bootstrap">
 
-      <div class="redes">  
-        <ul>
-          <li>
-            <a href="">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+                 
+        <div class="collapse navbar-collapse menu-items-bootstrap" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item facebook">
+              <a class="nav-link" aria-current="page" href=""> <i class="fa-brands fa-facebook"></i></a>
+            </li>  
+            <li class="nav-item instagram">
+              <a class="nav-link" aria-current="page" href=""> <i class="fa-brands fa-instagram-square"></i></a>
+            </li>                      
+            <li class="nav-item twitter">
+              <a class="nav-link" aria-current="page" href=""> <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
 
-          <li>
-            <a href="">
-              <i class="fa-brands fa-instagram-square"></i>
-            </a>
-          </li>
-          
-          <li>
-            <a href="">
-              <i class="fa-brands fa-twitter-square"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="nav1">
-        <nav>
-          <ul>
-            <li>
-              <a href="../index.html">Inicio</a>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
             </li>
-            <li>
-              <a href="../pages/quienesSomos.html">Quienes Somos</a>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/quienesSomos.html" >Quienes Somos</a>
             </li>
-            <li>
-              <a href="../pages/contacto.html">Contacto</a>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/contacto.html">Contacto</a>
+            </li>
+
+            <li class="nav-item imgHeaderBootstrap">              
+              <img src="../img/logon3.png" class="img-fluid logoHeader">              
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/bobinos.html">Bobinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/porcinos.html">Porcinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/equinos.html">Equinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/conejos.html">Conejos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/aves.html">Aves</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href=""> <i class="fa-solid fa-cart-shopping"></i></a>
             </li>
           </ul>
-        </nav>
-      </div>
-
-      <nav class="buscador">  
-        <input class="texto" type="text" name="buscador" placeholder="Buscar...">
+        </div>        
       </nav>
-
-      <div class="nav2">
-        <nav>   
-          <ul>
-            <li>
-              <a href="../pages/bobinos.html">Bobinos</a>
-            </li>
-            <li>
-              <a href="../pages/porcinos.html">Porcinos</a>
-            </li>
-            <li>
-              <a href="../pages/equinos.html">Equinos</a>
-            </li>
-            <li>
-              <a href="../pages/conejos.html">Conejos</a>
-            </li>
-            <li>
-              <a href="../pages/aves.html">Aves</a>
-             </li>
-          </ul>
-        </nav>
-      </div>
-      
-      <div class="carrito">
-        <a href="">
-          <i class="fa-solid fa-cart-shopping"></i>
-        </a>
-      </div>
-    </div>    
+    </div>
   </header>
   
   <main>
-    <div class="mainProductos">
 
-      <section class="imgMainProductos">
+    <div class="gridProductos">
+
+      <div class="contenedorUno">
         <img src="../img/bobinos.jpg" alt="Bobinos">
-      </section>
+      </div>
 
-      <section class="textoMainProductos">
-        <h2 class="tituloBPE">Bobinos</h2>
-        <p class="parrafoBPE">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sed distinctio, hic omnis, neque quibusdam consectetur corporis veniam fugiat consequuntur ut maiores sequi! Consectetur reprehenderit, molestiae assumenda perferendis odio ut?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui sint rerum consequuntur in tempora expedita! Optio nulla molestias hic esse tempore minus consequuntur recusandae, ullam modi, eveniet quibusdam reprehenderit.
-        </p>
-      </section>
+      <div class="contenedorDos">
+        <h1 class="tituloMainProductos">Bobinos</h1>
+        <p class="parrafoMainProductos">Una dieta bien balanceada y un manejo adecuado optimizan la producción de leche, la reproducción y la salud de la vaca.</p>
+        <p class="parrafoMainProductos">En <b>La Huella S.A.</b> trabajamos para ofrecer una excelente calidad, con el objetivo de que nuestros productos alimenten sus ganancias.</p>
       
-    </div>  
+        <h4 class="tituloTabla">Propiedades Recomendadas</h4>
+        <table class="tablaPropiedades">
+          <tbody>
+            <tr>
+              <td>Proteína Bruta</td>
+              <td>18,00% Mín</td>
+            </tr>
+            <tr>
+              <td>Extracto Etéreo</td>
+              <td>2,00% Mín</td>
+            </tr>
+            <tr>
+              <td>Fibra Cruda</td>
+              <td>8,00% Máx</td>
+            </tr>
+            <tr>
+              <td>Minerales Totales</td>
+              <td>8,00% Max</td>
+            </tr>
+            <tr>
+              <td>Humedad</td>
+              <td>13,00% Max</td>
+            </tr>
+            <tr>
+              <td>Calcio</td>
+              <td>1,00% Min</td>
+            </tr>
+            <tr>
+              <td>Fósforo</td>
+              <td>0,50% Min</td>
+            </tr>
+            <tr>
+              <td>Valor Energía Mínima</td>
+              <td>74 TDN</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
   </main>
 
   <footer>
     <div class="divFooter">
       <div class="divLogoFooter">
         <a href="../index.html">
-          <img src="../img/logo1.png" class="logoFooter">
+          <img src="../img/logoGrandeTr.png" class="logoFooter">
         </a>
       </div>       
       
@@ -152,6 +172,9 @@
         <h3 class="tituloNosotros">Nosotros</h3>
         <ul>
           <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
             <a href="../pages/quienesSomos.html">Quienes Somos</a>
           </li>
           <li>
@@ -161,7 +184,7 @@
       </div>
 
       <div class="seguinosEn">
-        <h3 class="tituloSeguinosEn">Seguinos en</h3>
+        <h3 class="tituloSeguinosEn">Seguinos</h3>
         <ul>
           <li>
             <a href="">
@@ -190,13 +213,13 @@
             <i class="fa-solid fa-circle-question"></i>  FAQ
           </li>
           <li>
-            <i class="fa-solid fa-credit-card"></i>  Pagos
+            <i class="fa-solid fa-credit-card"></i>  Formas de Pago
           </li>
           <li>
-            <i class="fa-solid fa-bag-shopping"></i>  Compras
+            <i class="fa-solid fa-bag-shopping"></i>  Compra Segura
           </li>
           <li>
-            <i class="fa-solid fa-truck-fast"></i>  Envíos
+            <i class="fa-solid fa-truck-fast"></i>  Envío Gratis
           </li>
         </ul>
       </div>
@@ -208,5 +231,7 @@
     </div>
 
   </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

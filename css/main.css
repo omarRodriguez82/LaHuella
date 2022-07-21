@@ -1,0 +1,492 @@
+/*--- reset CCS ---*/ 
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "nunito";
+  list-style: none;
+  text-decoration: none;
+}
+
+
+/*--- body grid ---*/
+
+body{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+}
+
+header{
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+}
+
+
+/*--- boton whatsapp ---*/
+
+.icono{
+  position:fixed;
+  width:4rem;
+  height:4rem;
+  line-height: 4rem;
+  bottom:2rem;
+  right:2rem;
+  background:rgba(58, 41, 17, 0.89);
+  color:#FFF;
+  border-radius:2rem;
+  text-align:center;
+  font-size:2.5rem;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 500ms ease;
+}
+
+
+/*--- Bootstrap: full aves.html y header full sitio---*/
+
+.menu-bootstrap{
+  background-color: rgba(170, 136, 84, 0.89);
+}
+
+.menu-items-bootstrap{
+  padding: 0rem;
+  margin: 0rem;  
+  justify-content: center;
+}
+
+.menu-items-bootstrap a{
+  color: white;
+  font-size: 1.1rem;
+}
+
+.imgHeaderBootstrap img{ 
+  width: 30vh;
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+.navbar-nav{
+  align-items: center;
+  gap: 2rem;
+}
+
+.tituloAves{
+  color: rgba(170, 136, 84, 0.89);
+}
+
+.divFooter-boostrap{
+  background-color: rgba(170, 136, 84, 0.89);
+}
+
+.logoFooterBootstrap{
+  width: 85%;
+}
+
+.grillas-footer{
+  justify-content: center;
+  gap: 2rem;
+}
+
+.titulosFooter{
+  color: rgba(58, 41, 17, 0.89);
+  font-weight:500
+}
+
+.copy-boostrap{
+  background-color: rgba(58, 41, 17, 0.89);
+}
+
+
+/*--- Main Index ---*/
+
+.tituloIndex{  
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+.parrafoIndex{
+    font-size: 1.1rem;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+
+/*--- Main Quienes Somos---*/
+
+.gridQuienesSomos{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "contenedorUno contenedorDos"
+                       "contenedorTres contenedorCuatro" 
+                       "contenedorCinco contenedorSeis";
+  padding: 1rem;
+}
+
+.contenedorUno{
+  grid-area: contenedorUno;
+}
+
+.contenedorDos{
+  grid-area: contenedorDos;
+}
+
+.contenedorTres{
+  grid-area: contenedorTres;
+}
+
+.contenedorCuatro{
+  grid-area: contenedorCuatro;
+}
+
+.contenedorCinco{
+  grid-area: contenedorCinco;
+}
+
+.contenedorSeis{
+  grid-area: contenedorSeis;
+}
+
+.gridQuienesSomos img{
+  width: 100%;
+  padding: 1rem;
+}
+
+.tituloMainQS{
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.parrafoMainQS{
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+.galeriaQuienesSomos img{
+  width: 100%;
+  padding: 1rem;
+  filter: grayscale(100%);
+}
+
+.galeriaQuienesSomos img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+/*--- galeria Index grid ---*/
+
+.galeriaIndex{
+  display: grid;
+  grid-template-columns:  repeat(1fr *6);
+  grid-template-rows: auto;
+  grid-template-areas: "galVacas galCerdos galCaballos galConejos galGallinas galAlfalfa";
+  padding: 1rem;
+  background-image: linear-gradient(to top, rgba(170, 136, 84, 0.89), white);
+  justify-content: space-around;
+}
+
+.galVacas{
+  grid-area: galVacas;
+}
+
+.galCerdos{
+  grid-area: galCerdos;
+}
+
+.galCaballos{
+  grid-area: galCaballos;
+}
+
+.galConejos{
+  grid-area: galConejos;
+}
+
+.galGallinas{
+  grid-area: galGallinas;
+}
+
+.galAlfalfa{
+  grid-area: galAlfalfa;
+}
+
+.galeriaIndex img{
+  width: 100%;
+  padding: 1rem;
+  filter: grayscale(100%);
+}
+
+.galeriaIndex img:hover{
+filter: grayscale(0%);
+transform: scale(1.1);
+transition: 1s;
+}
+
+
+/*--- Contacto ---*/
+
+.divContacto{
+  display: flex;
+  justify-content: center;
+}
+
+.fieldsetContacto{
+  min-width: 60rem;
+  margin: 2rem;
+  padding: 2rem;
+  border: 0.15rem solid rgba(170, 136, 84, 0.89);
+  border-radius: 1.5rem;
+}
+
+.legendContacto{
+  font-size: 2rem;
+  color: black;
+  padding: 0.3rem;
+}
+
+.tituloCampoContacto{
+  font-size: 1rem;  
+  color: black;
+}
+
+.inputContacto{
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  width: 100%;
+}
+
+.botones{
+  display: flex;
+  justify-content:space-between;
+}
+
+.limpiar, .enviar{
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: white;
+  background-color:rgba(170, 136, 84, 0.89);
+  border: none;
+  border-radius: 0.75rem;
+}
+
+
+/*--- Bobinos ---*/
+
+.gridProductos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "contenedorUno contenedorDos";
+  padding: 0.5rem;
+}
+
+.contenedorUno{
+  grid-area: contenedorUno;
+}
+
+.contenedorDos{
+  grid-area: contenedorDos;
+}
+
+.tituloMainProductos{
+  font-size: 2.5rem;
+  color: rgba(170, 136, 84, 0.89);
+  text-align: center;
+}
+
+.parrafoMainProductos{
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.contenedorUno img{
+  width: 99%;
+}
+
+.tituloTabla{
+  background-color: rgb(25,135,84);
+  text-align: center;
+  color: white;
+  margin: 0.5rem;
+}
+
+.tablaPropiedades{
+  width: 100%;
+  text-align: center;
+}
+
+tbody tr td{
+  width: 50%;
+}
+
+
+/*--- footer ---*/
+
+footer ul, i, a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.divFooter{
+  background-color: rgba(170, 136, 84, 0.89);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.divLogoFooter{
+  width: 12rem;
+  height: 12rem;
+}
+
+.divLogoFooter img{
+  width: 100%;
+}
+
+.tienda{
+  width: 12rem;
+  height: 12rem;
+}
+
+.tituloTienda{
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.nosotros{
+  width: 12rem;
+  height: 12rem;
+}
+
+
+.tituloNosotros{
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+
+.seguinosEn{
+  width: 12rem;
+  height: 12rem;
+}
+
+.tituloSeguinosEn{
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.ayuda{
+  width: 12rem;
+  height: 12rem;
+}
+
+.tituloAyuda{
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.copy{
+  color:white;
+  font-size: 0.8rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  text-align: center;
+  background-color: rgba(58, 41, 17, 0.89);
+}
+
+
+/*--- Media Queries ---*/
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+
+  .imgHeaderBootstrap, .facebook, .instagram, .twitter, .logoFooterBootstrap, .divLogoFooter{
+    display: none;
+  }
+
+  footer ul, i, a{
+    font-size: 0.9rem;
+  }
+
+  .tienda{
+    width: 5.5rem;
+    height: 12rem;
+  }
+
+  .nosotros{
+    width: 5.5rem;
+    height: 12rem;
+  }
+
+  .seguinosEn{
+    width: 5.5rem;
+    height: 12rem;
+  }
+
+  .ayuda{
+    width: 5.5rem;
+    height: 12rem;
+  }
+
+  /*--- quienes somos ---*/
+
+  .gridQuienesSomos{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "contenedorUno"
+                         "contenedorDos"
+                         "contenedorCuatro"
+                         "contenedorTres"
+                         "contenedorSeis"
+                         "contenedorCinco";
+  }
+
+  .contenedorSeis{
+    display: none;
+  }
+
+
+  /*--- galeria Index ---*/
+
+  .galeriaIndex{   
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "vacas cerdos" 
+                         "caballos conejos"
+                         "aves alfalfa";
+  }
+
+
+  /*--- contacto ---*/
+
+ .fieldsetContacto{
+    min-width: 25rem;
+  }
+
+
+  /*--- Productos ---*/
+
+  .gridProductos{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "contenedorUno"
+                         "contenedorDos"
+  }
+  
+}
