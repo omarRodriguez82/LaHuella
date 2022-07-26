@@ -1,4 +1,4 @@
-/*--- Bootstrap: full aves.html y header full sitio---*/
+/*--- Header Full Bootstrap ---*/
 .menu-bootstrap {
   background-color: rgba(170, 136, 84, 0.89); }
 
@@ -21,6 +21,7 @@
   align-items: center;
   gap: 2rem; }
 
+/*--- Bootstrap: full aves.html y header full sitio---*/
 .tituloAves {
   color: rgba(170, 136, 84, 0.89); }
 
@@ -32,11 +33,13 @@
 
 .grillas-footer {
   justify-content: center;
-  gap: 2rem; }
+  gap: 2rem;
+  text-align: center; }
 
 .titulosFooter {
   color: rgba(58, 41, 17, 0.89);
-  font-weight: 500; }
+  font-weight: 500;
+  text-align: center; }
 
 .copy-boostrap {
   background-color: rgba(58, 41, 17, 0.89);
@@ -182,11 +185,16 @@ footer ul i, footer ul a {
 .tienda, .nosotros, .seguinos, .ayuda {
   width: 12rem;
   height: 12rem; }
+  .tienda ul, .nosotros ul, .seguinos ul, .ayuda ul {
+    padding: 0;
+    margin: 0;
+    text-align: center; }
 
 .tituloTienda, .tituloNosotros, .tituloSeguinos, .tituloAyuda {
   font-size: 1.2rem;
   padding: 0.5rem;
-  color: rgba(58, 41, 17, 0.89); }
+  color: rgba(58, 41, 17, 0.89);
+  text-align: center; }
 
 .copy {
   color: white;
