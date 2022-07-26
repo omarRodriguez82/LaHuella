@@ -1,0 +1,51 @@
+/*--- Main Quienes Somos---*/
+
+.gridQuienesSomos{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "contenedorUno contenedorDos"
+                       "contenedorTres contenedorCuatro" 
+                       "contenedorCinco contenedorSeis";
+  padding: 1rem;
+  img{
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.contenedorUno{
+  grid-area: contenedorUno;
+}
+
+.contenedorDos{
+  grid-area: contenedorDos;
+}
+
+.contenedorTres{
+  grid-area: contenedorTres;
+}
+
+.contenedorCuatro{
+  grid-area: contenedorCuatro;
+}
+
+.contenedorCinco{
+  grid-area: contenedorCinco;
+}
+
+.contenedorSeis{
+  grid-area: contenedorSeis;
+}
+
+.tituloMainQS{
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.parrafoMainQS{
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+

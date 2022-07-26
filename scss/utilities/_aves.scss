@@ -1,0 +1,57 @@
+/*--- Bootstrap: full aves.html y header full sitio---*/
+
+.menu-bootstrap{
+  background-color: $color-principal;
+}
+
+.logoHamb{
+  display: none;
+}
+
+.menu-items-bootstrap{
+  padding: 0rem;
+  margin: 0rem;  
+  justify-content: center;
+    a{
+      color: white;
+      font-size: 1.1rem;
+    }
+}
+
+.imgHeaderBootstrap img{ 
+  width: 30vh;
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+.navbar-nav{
+  align-items: center;
+  gap: 2rem;
+}
+
+.tituloAves{
+  color: $color-principal;
+}
+
+.divFooter-boostrap{
+  background-color: $color-principal;
+}
+
+.logoFooterBootstrap{
+  width: 85%;
+}
+
+.grillas-footer{
+  justify-content: center;
+  gap: 2rem;
+}
+
+.titulosFooter{
+  color: $color-secundario;
+  font-weight:500;
+}
+
+.copy-boostrap{
+  background-color: $color-secundario;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 0.8rem;
+}
