@@ -85,9 +85,8 @@
   padding: 1rem; }
 
 /*--- Contacto ---*/
-.divContacto {
-  display: flex;
-  justify-content: center; }
+.sectionContacto {
+  padding: 0rem 10rem; }
 
 .fieldsetContacto {
   min-width: 60rem;
@@ -321,6 +320,8 @@ footer {
     grid-template-rows: auto auto;
     grid-template-areas: "vacas cerdos caballos"  "conejos aves alfalfa"; }
   /*--- contacto ---*/
+  .sectionContacto {
+    padding: 0rem 5rem; }
   .fieldsetContacto {
     min-width: 20rem;
     padding: 1rem;
@@ -344,4 +345,6 @@ footer {
     grid-template-rows: auto auto auto;
     grid-template-areas: "contenedorUno" "contenedorCuatro" "contenedorCinco"; }
   .contenedorDos, .contenedorTres, .contenedorSeis {
-    display: none; } }
+    display: none; }
+  .sectionContacto {
+    padding: 0rem 3rem; } }
