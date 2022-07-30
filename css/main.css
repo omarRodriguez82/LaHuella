@@ -1,3 +1,17 @@
+.tienda, .nosotros, .seguinos, .ayuda {
+  width: 12rem;
+  height: 12rem; }
+  .tienda ul, .nosotros ul, .seguinos ul, .ayuda ul {
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+
+.tituloTienda, .tituloNosotros, .tituloSeguinos, .tituloAyuda {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: rgba(58, 41, 17, 0.89);
+  text-align: center; }
+
 /*--- Header Full Bootstrap ---*/
 .menu-bootstrap {
   background-color: rgba(170, 136, 84, 0.89); }
@@ -43,7 +57,7 @@
 
 .copy-boostrap {
   background-color: rgba(58, 41, 17, 0.89);
-  padding: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.5rem 0rem;
   font-size: 0.8rem; }
 
 /*--- Main Quienes Somos---*/
@@ -86,7 +100,7 @@
 
 /*--- Contacto ---*/
 .sectionContacto {
-  padding: 0rem 10rem; }
+  padding: 0rem 6rem; }
 
 .fieldsetContacto {
   min-width: 60rem;
@@ -98,6 +112,7 @@
 .legendContacto {
   font-size: 2rem;
   color: black;
+  text-align: center;
   padding: 0.3rem; }
 
 .tituloCampoContacto {
@@ -180,20 +195,6 @@ footer ul i, footer ul a {
   height: 12rem; }
   .divLogoFooter img {
     width: 100%; }
-
-.tienda, .nosotros, .seguinos, .ayuda {
-  width: 12rem;
-  height: 12rem; }
-  .tienda ul, .nosotros ul, .seguinos ul, .ayuda ul {
-    padding: 0;
-    margin: 0;
-    text-align: center; }
-
-.tituloTienda, .tituloNosotros, .tituloSeguinos, .tituloAyuda {
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  color: rgba(58, 41, 17, 0.89);
-  text-align: center; }
 
 .copy {
   color: white;
@@ -321,7 +322,7 @@ footer {
     grid-template-areas: "vacas cerdos caballos"  "conejos aves alfalfa"; }
   /*--- contacto ---*/
   .sectionContacto {
-    padding: 0rem 5rem; }
+    padding: 0rem 4rem; }
   .fieldsetContacto {
     min-width: 20rem;
     padding: 1rem;
@@ -347,4 +348,4 @@ footer {
   .contenedorDos, .contenedorTres, .contenedorSeis {
     display: none; }
   .sectionContacto {
-    padding: 0rem 3rem; } }
+    padding: 0rem 2rem; } }
