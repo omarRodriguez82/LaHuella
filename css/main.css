@@ -1,12 +1,12 @@
-.tienda, .nosotros, .seguinos, .ayuda {
+.productos, .nosotros, .seguinos, .ayuda {
   width: 12rem;
   height: 12rem; }
-  .tienda ul, .nosotros ul, .seguinos ul, .ayuda ul {
+  .productos ul, .nosotros ul, .seguinos ul, .ayuda ul {
     padding: 0;
     margin: 0;
     text-align: center; }
 
-.tituloTienda, .tituloNosotros, .tituloSeguinos, .tituloAyuda {
+.tituloProductos, .tituloNosotros, .tituloSeguinos, .tituloAyuda {
   font-size: 1.2rem;
   padding: 0.5rem;
   color: rgba(58, 41, 17, 0.89);
@@ -29,7 +29,7 @@
 
 .imgHeaderBootstrap img {
   width: 30vh;
-  margin: 0rem 2rem 0rem 2rem; }
+  margin: 0rem 2rem; }
 
 .navbar-nav {
   align-items: center;
@@ -143,7 +143,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "contenedorUno contenedorDos";
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  align-items: center; }
 
 .contenedorUnoProd {
   grid-area: contenedorUno; }
@@ -152,27 +153,65 @@
 
 .contenedorDosProd {
   grid-area: contenedorDos; }
+  .contenedorDosProd h1 {
+    font-size: 2.5rem;
+    color: rgba(170, 136, 84, 0.89);
+    text-align: center; }
+  .contenedorDosProd p {
+    padding: 0rem 0.5rem;
+    text-align: center; }
 
-.tituloMainProductos {
-  font-size: 2.5rem;
-  color: rgba(170, 136, 84, 0.89);
-  text-align: center; }
+.gridProductos2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "listaProductos imagenBolsa analisis";
+  margin: 20px;
+  align-items: center;
+  justify-content: center; }
 
-.parrafoMainProductos {
-  padding: 0rem 0.5rem; }
+.listaProductos {
+  grid-area: listaProductos; }
+  .listaProductos ul {
+    text-align: center; }
+    .listaProductos ul a {
+      float: left;
+      width: 80%;
+      margin: 0.25rem;
+      background-color: #198754;
+      padding: 0.8rem;
+      border-radius: 0.2rem;
+      font-size: 0.9rem;
+      list-style: none;
+      text-decoration: none;
+      color: white; }
+      .listaProductos ul a:hover {
+        background-color: #157347;
+        transition: 200ms; }
 
-.tituloTabla {
-  background-color: #198754;
-  text-align: center;
-  color: white;
-  margin: 0.5rem; }
+.imagenBolsa {
+  grid-area: imagenBolsa;
+  display: flex;
+  justify-content: center; }
+  .imagenBolsa img {
+    width: 80%; }
 
-.tablaPropiedades {
-  width: 100%;
-  text-align: center; }
-
-tbody tr td {
-  width: 50%; }
+.analisis {
+  grid-area: analisis; }
+  .analisis h3 {
+    color: #198754;
+    text-align: center; }
+  .analisis table {
+    width: 100%;
+    text-align: center; }
+    .analisis table tbody td {
+      width: 50%; }
+  .analisis .indicaciones {
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    color: #198754;
+    text-align: center;
+    padding: 0.5rem; }
 
 /*--- footer ---*/
 footer ul i, footer ul a {
@@ -181,6 +220,9 @@ footer ul i, footer ul a {
   text-decoration: none;
   color: white;
   font-size: 1rem; }
+  footer ul i:hover, footer ul a:hover {
+    color: rgba(58, 41, 17, 0.89);
+    transition: 200ms; }
 
 .divFooter {
   background-color: rgba(170, 136, 84, 0.89);
@@ -305,7 +347,7 @@ footer {
   /*--- Footer ---*/
   footer ul i, footer ul a {
     font-size: 0.9rem; }
-  .tienda, .nosotros, .seguinos, .ayuda {
+  footer .tienda, footer .nosotros, footer .seguinos, footer .ayuda {
     width: 5.5rem;
     height: 12rem; }
   /*--- quienes somos ---*/
@@ -322,7 +364,7 @@ footer {
     grid-template-areas: "vacas cerdos caballos"  "conejos aves alfalfa"; }
   /*--- contacto ---*/
   .sectionContacto {
-    padding: 0rem 4rem; }
+    padding: 0rem 3rem; }
   .fieldsetContacto {
     min-width: 20rem;
     padding: 1rem;
@@ -331,7 +373,13 @@ footer {
   .gridProductos {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "contenedorUno" "contenedorDos"; } }
+    grid-template-areas: "contenedorUno" "contenedorDos"; }
+  .gridProductos2 {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "listaProductos" "imagenBolsa" "analisis"; }
+  .listaProductos ul a {
+    width: 90%; } }
 
 /*--- Media Queries Mobile---*/
 @media screen and (max-width: 576px) {

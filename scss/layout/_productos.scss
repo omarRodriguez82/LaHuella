@@ -6,6 +6,7 @@
   grid-template-rows: auto;
   grid-template-areas: "contenedorUno contenedorDos";
   padding: 0.5rem;
+  align-items: center;
 }
 
 .contenedorUnoProd{
@@ -17,30 +18,81 @@
 
 .contenedorDosProd{
   grid-area: contenedorDos;
+    h1{
+      font-size: 2.5rem;
+      color:$color-principal;
+      text-align: center;
+    }
+    p{
+      padding: 0rem 0.5rem;
+      text-align: center;
+    }
 }
 
-.tituloMainProductos{
-  font-size: 2.5rem;
-  color:$color-principal;
-  text-align: center;
+.gridProductos2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "listaProductos imagenBolsa analisis";
+  margin: 20px;  
+  align-items: center;
+  justify-content: center;
 }
 
-.parrafoMainProductos{
-  padding: 0rem 0.5rem;
+.listaProductos{
+    grid-area: listaProductos;
+  ul{ 
+    text-align: center;
+    a{
+      float:left;
+      width: 80%;
+      margin: 0.25rem;
+      background-color: $color-terciario;
+      padding: 0.8rem;
+      border-radius: 0.2rem;
+      font-size: 0.9rem;
+      list-style: none;
+      text-decoration: none;
+      color: white;
+        &:hover{
+          background-color: rgb(21,115,71);
+          transition: 200ms;
+        } 
+      }  
+  }
 }
 
-.tituloTabla{
-  background-color: rgb(25,135,84);
-  text-align: center;
-  color: white;
-  margin: 0.5rem;
+.imagenBolsa{
+  grid-area: imagenBolsa;
+  display: flex;
+  justify-content: center;
+  img{
+    width: 80%;
+  }
 }
 
-.tablaPropiedades{
-  width: 100%;
-  text-align: center;
+.analisis{
+  grid-area: analisis;
+  h3{
+    color: $color-terciario;
+    text-align: center;
+  }
+  table{
+    width: 100%;
+    text-align: center;
+    tbody{      
+        td{
+          width: 50%;
+        }      
+    }
+  }
+  
+  .indicaciones{    
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    color: $color-terciario;
+    text-align: center;
+    padding: 0.5rem;      
+  }
 }
 
-tbody tr td{
-  width: 50%;
-}

@@ -8,6 +8,10 @@ ul{
     text-decoration: none;
     color: white;
     font-size: 1rem;
+    &:hover{
+      color: $color-secundario;
+      transition: 200ms;
+      }
     }
   }
 }
@@ -29,11 +33,11 @@ ul{
     }
 }
 
-.tienda, .nosotros, .seguinos, .ayuda{
+.productos, .nosotros, .seguinos, .ayuda{
   @extend %tarjetasFooter;
 }
 
-.tituloTienda, .tituloNosotros, .tituloSeguinos, .tituloAyuda{
+.tituloProductos, .tituloNosotros, .tituloSeguinos, .tituloAyuda{
   @extend %titulosTarjetasFooter;
 }
 
