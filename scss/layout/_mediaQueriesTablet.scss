@@ -15,22 +15,7 @@
     display: block;
     width: 40%;
   }
-
-  /*--- Footer ---*/
-
-  footer{
-      ul{
-        i, a{
-          font-size: 0.9rem;
-          }
-        }
-        .tienda, .nosotros, .seguinos, .ayuda{
-          width: 5.5rem;
-          height: 12rem;
-      }
-  }
-  
-
+   
   /*--- quienes somos ---*/
 
   .gridQuienesSomos{
@@ -92,9 +77,15 @@
   .listaProductos{
     ul{ 
       a{
-        width: 90%;      
+        padding: 0.3rem;    
         }  
     }
   }
+
+  /*--- Footer ---*/
   
-}
+  .divLogoFooter{
+    display: none;
+  }
+
+} 

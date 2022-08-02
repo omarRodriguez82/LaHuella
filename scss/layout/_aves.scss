@@ -1,15 +1,29 @@
 /*--- Bootstrap: full aves.html y header full sitio---*/
 
 .tituloAves{
-  color: $color-principal;
+  color: nth($listas, 1);
 }
 
 .divFooter-boostrap{
-  background-color: $color-principal;
+  background-color: nth($listas, 1);
+}
+
+.gridAves2{
+  display: flex;
+  justify-content: center;
+  img{
+    width: 100%;
+  }
+}
+
+.indicaciones{
+  p{
+    padding: 2rem;
+  }  
 }
 
 .logoFooterBootstrap{
-  width: 85%;
+  width: 30vh;
 }
 
 .grillas-footer{
@@ -19,13 +33,13 @@
 }
 
 .titulosFooter{
-  color: $color-secundario;
+  color: nth($listas, 2);
   font-weight:500;
   text-align: center;
 }
 
 .copy-boostrap{
-  background-color: $color-secundario;
+  background-color: nth($listas, 2);
   padding: 0.5rem 0rem;
   font-size: 0.8rem;
 }

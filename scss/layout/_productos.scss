@@ -18,15 +18,7 @@
 
 .contenedorDosProd{
   grid-area: contenedorDos;
-    h1{
-      font-size: 2.5rem;
-      color:$color-principal;
-      text-align: center;
-    }
-    p{
-      padding: 0rem 0.5rem;
-      text-align: center;
-    }
+  @include mainProds;
 }
 
 .gridProductos2{
@@ -40,26 +32,26 @@
 }
 
 .listaProductos{
-    grid-area: listaProductos;
-  ul{ 
-    text-align: center;
-    a{
-      float:left;
-      width: 80%;
-      margin: 0.25rem;
-      background-color: $color-terciario;
-      padding: 0.8rem;
-      border-radius: 0.2rem;
-      font-size: 0.9rem;
-      list-style: none;
-      text-decoration: none;
-      color: white;
-        &:hover{
-          background-color: rgb(21,115,71);
-          transition: 200ms;
-        } 
-      }  
-  }
+  grid-area: listaProductos;
+ul{ 
+  text-align: center;
+  a{
+    float:left;
+    width: 90%;
+    margin: 0.25rem;
+    background-color: nth($listas, 3);
+    padding: 1.3rem;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+      &:hover{
+        background-color: rgb(21,115,71);
+        transition: 200ms;
+      } 
+    }  
+}
 }
 
 .imagenBolsa{
@@ -67,14 +59,14 @@
   display: flex;
   justify-content: center;
   img{
-    width: 80%;
+    width: 100%;
   }
 }
 
 .analisis{
   grid-area: analisis;
   h3{
-    color: $color-terciario;
+    color: nth($listas, 3);
     text-align: center;
   }
   table{
@@ -90,7 +82,7 @@
   .indicaciones{    
     margin-top: 2rem;
     border-radius: 0.5rem;
-    color: $color-terciario;
+    color: nth($listas, 3);
     text-align: center;
     padding: 0.5rem;      
   }

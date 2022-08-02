@@ -1,5 +1,6 @@
-@import "utilities/variables";
+@import "utilities/listas";
 @import "utilities/extends";
+@import "utilities/mixins";
 @import "layout/headerBootstrap";
 @import "layout/aves";
 @import "layout/quienesSomos";
@@ -52,7 +53,7 @@ footer{
   line-height: 4rem;
   bottom:2rem;
   right:2rem;
-  background:$color-secundario;
+  background: nth($listas, 2);
   color:#FFF;
   border-radius:2rem;
   text-align:center;
@@ -83,7 +84,7 @@ footer{
   grid-template-rows: auto;
   grid-template-areas: "galVacas galCerdos galCaballos galConejos galGallinas galAlfalfa";
   padding: 1rem;
-  background-image: linear-gradient(to top, $color-principal, white);
+  background-image: linear-gradient(to top, nth($listas, 1), white);
   justify-content: space-around;
 }
 
@@ -115,11 +116,15 @@ footer{
   img{
   width: 100%;
   padding: 1rem;
-  filter: grayscale(100%);
+  filter: grayscale(100%);  
+  transition: 1s;
     &:hover{
       filter: grayscale(0%);
       transform: scale(1.1);
-      transition: 1s;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
     }
   }
 } 
