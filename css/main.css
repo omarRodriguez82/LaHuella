@@ -1,5 +1,4 @@
 .productos, .nosotros, .seguinos, .ayuda {
-  width: 5.5rem;
   height: 12rem; }
   .productos ul, .nosotros ul, .seguinos ul, .ayuda ul {
     padding: 0;
@@ -107,43 +106,71 @@
   padding: 1rem; }
 
 /*--- Contacto ---*/
-.sectionContacto {
-  padding: 0rem 6rem; }
+.gridContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "contactoForm contactoInfo" "contactoForm contactoMapa"; }
 
-.fieldsetContacto {
-  min-width: 60rem;
-  margin: 2rem;
-  padding: 2rem;
+.contactoForm {
+  grid-area: contactoForm; }
+  .contactoForm .fieldsetContacto {
+    margin: 1rem;
+    padding: 1rem;
+    border: 0.15rem solid rgba(170, 136, 84, 0.89);
+    border-radius: 1.5rem; }
+    .contactoForm .fieldsetContacto .legendContacto {
+      font-size: 2rem;
+      color: black;
+      text-align: center;
+      padding: 0.3rem; }
+    .contactoForm .fieldsetContacto .tituloCampoContacto {
+      font-size: 1rem;
+      color: black; }
+    .contactoForm .fieldsetContacto .inputContacto {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin: 0.5rem 0rem;
+      width: 100%; }
+    .contactoForm .fieldsetContacto .botones {
+      display: flex;
+      justify-content: space-between; }
+      .contactoForm .fieldsetContacto .botones .limpiar, .contactoForm .fieldsetContacto .botones .enviar {
+        font-size: 1rem;
+        padding: 0.5rem;
+        color: white;
+        background-color: rgba(170, 136, 84, 0.89);
+        border: none;
+        border-radius: 0.75rem; }
+
+.contactoInfo {
+  grid-area: contactoInfo;
+  margin: 1rem;
   border: 0.15rem solid rgba(170, 136, 84, 0.89);
   border-radius: 1.5rem; }
+  .contactoInfo h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem; }
+  .contactoInfo h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center; }
+  .contactoInfo .parrafoInfo {
+    padding: 0.8rem; }
+  .contactoInfo p {
+    padding: 0;
+    font-size: 1rem;
+    text-align: center; }
 
-.legendContacto {
-  font-size: 2rem;
-  color: black;
-  text-align: center;
-  padding: 0.3rem; }
-
-.tituloCampoContacto {
-  font-size: 1rem;
-  color: black; }
-
-.inputContacto {
-  font-size: 1rem;
-  padding: 0.5rem;
-  margin: 0.5rem 0rem;
-  width: 100%; }
-
-.botones {
-  display: flex;
-  justify-content: space-between; }
-
-.limpiar, .enviar {
-  font-size: 1rem;
-  padding: 0.5rem;
-  color: white;
-  background-color: rgba(170, 136, 84, 0.89);
-  border: none;
-  border-radius: 0.75rem; }
+.contactoMapa {
+  grid-area: contactoMapa;
+  margin: 1rem 1rem 1rem 1rem; }
+  .contactoMapa iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem; }
 
 /*--- Productos ---*/
 .gridProductos {
@@ -345,14 +372,14 @@ footer {
 
 /*--- Media Queries Tablet---*/
 @media screen and (max-width: 991px) {
-  .imgHeaderBootstrap, .facebook, .instagram, .twitter, .logoFooterBootstrap, .divLogoFooter, .imagen-footer {
+  .logoHeader, .facebook, .instagram, .twitter, .logoFooterBootstrap, .divLogoFooter, .imagen-footer {
     display: none; }
   .menu-bootstrap {
     display: flex;
     justify-content: center; }
   .logoHamb {
     display: block;
-    width: 40%; }
+    width: 60%; }
   /*--- quienes somos ---*/
   .gridQuienesSomos {
     grid-template-columns: auto;
@@ -365,13 +392,6 @@ footer {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: "vacas cerdos caballos"  "conejos aves alfalfa"; }
-  /*--- contacto ---*/
-  .sectionContacto {
-    padding: 0rem 3rem; }
-  .fieldsetContacto {
-    min-width: 20rem;
-    padding: 1rem;
-    margin: 0.5rem; }
   /*--- Productos ---*/
   .gridProductos {
     grid-template-columns: auto;
@@ -383,6 +403,12 @@ footer {
     grid-template-areas: "listaProductos" "imagenBolsa" "analisis"; }
   .listaProductos ul a {
     padding: 0.3rem; }
+  /*--- Contacto ---*/
+  .gridContacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "contactoForm" "contactoInfo" "contactoMapa"; }
   /*--- Footer ---*/
   .divLogoFooter {
     display: none; } }
@@ -400,6 +426,4 @@ footer {
     grid-template-rows: auto auto auto;
     grid-template-areas: "contenedorUno" "contenedorCuatro" "contenedorCinco"; }
   .contenedorDos, .contenedorTres, .contenedorSeis {
-    display: none; }
-  .sectionContacto {
-    padding: 0rem 2rem; } }
+    display: none; } }
