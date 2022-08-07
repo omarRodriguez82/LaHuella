@@ -1,0 +1,58 @@
+/*--- main Ayuda.html ---*/
+
+
+.mainAyuda{
+  h1{
+    color:  nth($listas, 2);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .subtituloAyuda{
+    color:  nth($listas, 2);
+    font-size: 1.3rem;
+    padding: 2rem;
+  }
+  
+  h2{
+    color:  nth($listas, 1);
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .contenedor{
+    padding: 2rem;
+    list-style: block;
+    text-decoration: block;
+  }
+
+  .credito{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem;
+    img{
+      width: 80%;
+    }
+  }
+
+  .debito{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem;
+    img{
+      width: 50%;
+    }
+  }
+
+  .mPago{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem;
+    img{
+      width: 20%;
+    }
+  }
+}
+

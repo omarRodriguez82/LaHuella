@@ -7,6 +7,7 @@
 @import "layout/contacto";
 @import "layout/productos";
 @import "layout/footer";
+@import "layout/ayuda";
 
 
 /*--- reset CCS ---*/ 
@@ -53,12 +54,12 @@ footer{
   line-height: 4rem;
   bottom:2rem;
   right:2rem;
-  background: nth($listas, 2);
+  background: rgb(37,211,102);
   color:#FFF;
   border-radius:2rem;
   text-align:center;
   font-size:2.5rem;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 10px rgba(0,0,0,1);
   z-index:100;
   transition: all 500ms ease;
 }

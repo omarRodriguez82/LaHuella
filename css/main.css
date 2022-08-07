@@ -24,7 +24,8 @@
   justify-content: center; }
   .menu-items-bootstrap a {
     color: white;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    text-align: center; }
 
 .imgHeaderBootstrap img {
   width: 30vh; }
@@ -44,7 +45,8 @@
   display: flex;
   justify-content: center; }
   .gridAves2 img {
-    width: 100%; }
+    width: 100%;
+    padding: 2rem; }
 
 .indicaciones p {
   padding: 2rem; }
@@ -141,7 +143,16 @@
         color: white;
         background-color: rgba(170, 136, 84, 0.89);
         border: none;
-        border-radius: 0.75rem; }
+        border-radius: 0.75rem;
+        transition: 1s; }
+        .contactoForm .fieldsetContacto .botones .limpiar:hover, .contactoForm .fieldsetContacto .botones .enviar:hover {
+          transform: scale(1.1);
+          box-shadow: 0px 1px 10px #48341a;
+          transition: all 200ms ease;
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          -ms-transform: scale(1.1); }
 
 .contactoInfo {
   grid-area: contactoInfo;
@@ -162,6 +173,12 @@
   .contactoInfo p {
     padding: 0;
     font-size: 1rem;
+    text-align: center; }
+  .contactoInfo .email {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
     text-align: center; }
 
 .contactoMapa {
@@ -229,7 +246,8 @@
   display: flex;
   justify-content: center; }
   .imagenBolsa img {
-    width: 100%; }
+    width: 80%;
+    padding: 2rem; }
 
 .analisis {
   grid-area: analisis; }
@@ -277,6 +295,50 @@ footer ul i, footer ul a {
   text-align: center;
   background-color: #48341a; }
 
+/*--- main Ayuda.html ---*/
+.mainAyuda h1 {
+  color: #48341a;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1.5rem; }
+
+.mainAyuda .subtituloAyuda {
+  color: #48341a;
+  font-size: 1.3rem;
+  padding: 2rem; }
+
+.mainAyuda h2 {
+  color: rgba(170, 136, 84, 0.89);
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem; }
+
+.mainAyuda .contenedor {
+  padding: 2rem;
+  list-style: block;
+  text-decoration: block; }
+
+.mainAyuda .credito {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem; }
+  .mainAyuda .credito img {
+    width: 80%; }
+
+.mainAyuda .debito {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem; }
+  .mainAyuda .debito img {
+    width: 50%; }
+
+.mainAyuda .mPago {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem; }
+  .mainAyuda .mPago img {
+    width: 20%; }
+
 /*--- reset CCS ---*/
 * {
   padding: 0;
@@ -310,12 +372,12 @@ footer {
   line-height: 4rem;
   bottom: 2rem;
   right: 2rem;
-  background: #48341a;
+  background: #25d366;
   color: #FFF;
   border-radius: 2rem;
   text-align: center;
   font-size: 2.5rem;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 10px black;
   z-index: 100;
   transition: all 500ms ease; }
 
@@ -370,16 +432,21 @@ footer {
     -o-transform: scale(1.1);
     -ms-transform: scale(1.1); }
 
-/*--- Media Queries Tablet---*/
+/*--- Media Queries Tablet 1---*/
+@media screen and (min-width: 992px) and (max-width: 1450px) {
+  .facebook, .instagram, .twitter {
+    display: none; } }
+
+/*--- Media Queries Tablet 2---*/
 @media screen and (max-width: 991px) {
-  .logoHeader, .facebook, .instagram, .twitter, .logoFooterBootstrap, .divLogoFooter, .imagen-footer {
+  .facebook, .instagram, .twitter, .logoFooterBootstrap, .divLogoFooter, .imagen-footer, .imgHeaderBootstrap {
     display: none; }
   .menu-bootstrap {
     display: flex;
     justify-content: center; }
   .logoHamb {
     display: block;
-    width: 60%; }
+    width: 50%; }
   /*--- quienes somos ---*/
   .gridQuienesSomos {
     grid-template-columns: auto;
