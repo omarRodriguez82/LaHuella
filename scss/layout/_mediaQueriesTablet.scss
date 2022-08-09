@@ -4,6 +4,19 @@
   .facebook, .instagram, .twitter{
     display: none;
   }
+
+  .menu-bootstrap-inicio{
+    background-color: nth($listas, 4);
+  }
+
+  .gridInicio{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "textoVeterinario"
+                         "imgVeterinario"
+                         "textoBalanceados"
+                         "imgBalanceados";
+  }
 }
 
 /*--- Media Queries Tablet 2---*/
@@ -12,6 +25,19 @@
 
   .facebook, .instagram, .twitter, .logoFooterBootstrap, .divLogoFooter, .imagen-footer, .imgHeaderBootstrap{
     display: none;
+  }
+
+  .menu-bootstrap-inicio{
+    background-color: nth($listas, 6);
+  }
+
+  .gridInicio{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "textoVeterinario"
+                         "imgVeterinario"
+                         "textoBalanceados"
+                         "imgBalanceados";
   }
 
   .menu-bootstrap{

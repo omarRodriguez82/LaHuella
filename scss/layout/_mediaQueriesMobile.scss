@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 576px){
 
-  .ayuda, .seguinos, .ayudaBootstrap, .seguinosBootstrap{
+  .productos, .nosotros, .ayudaBootstrap, .seguinosBootstrap{
     display: none;
   }
 
@@ -11,7 +11,29 @@
     grid-template-rows: auto auto auto;
     grid-template-areas: "vacas cerdos"
                          "caballos conejos" 
-                         "aves alfalfa";
+                         "aves alfalfa";  
+  }
+
+  .textoVeterinario{
+    padding: 1rem 2rem;
+    h2{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
+  }
+
+  .textoBalanceados{
+    padding: 1rem 2rem;
+    h2{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
   }
 
 

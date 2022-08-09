@@ -1,0 +1,85 @@
+.menu-bootstrap-inicio{
+  position: fixed;
+  background-color: nth($listas, 4);
+  z-index: 2;
+}
+
+.background{
+  img{
+    width: 100%;
+  }
+}
+
+.gridInicio{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "imgVeterinario textoVeterinario"
+                       "textoBalanceados imgBalanceados";
+}
+
+.imgVeterinario{
+  grid-area: imgVeterinario;
+  background-color:  nth($listas,3);
+  img{
+    width: 100%;
+  }
+}
+
+.textoVeterinario{
+  grid-area: textoVeterinario;
+  padding: 2rem 4rem;
+  background-color: nth($listas,3);
+  h2{
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    color: nth($listas,5);
+  }
+
+  p{
+    color: white;
+    padding: 1rem 0rem;
+  }
+
+  .iconosProductos{
+    display: flex;
+    align-items: flex-end;
+    a{
+      img{
+        width: 70%;
+        transition: 1s;
+          &:hover{
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            }
+          }
+    
+    }
+  }
+}
+
+.textoBalanceados{
+  grid-area: textoBalanceados;
+  padding: 2rem 4rem;
+  background-color: nth($listas,5);
+  h2{
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    color: nth($listas,3);
+  }
+  p{
+    color: nth($listas,2);
+  }
+}
+
+.imgBalanceados{
+  grid-area: imgBalanceados;
+  background-color:  nth($listas,5);
+  img{
+    width: 100%;
+  }
+}
+ 
