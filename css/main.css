@@ -459,7 +459,7 @@ footer ul i, footer ul a {
 
 /*--- Media Queries Mobile---*/
 @media screen and (max-width: 576px) {
-  .productos, .nosotros, .ayudaBootstrap, .seguinosBootstrap {
+  .productos, .nosotros, .productosBootstrap, .nosotrosBootstrap {
     display: none; }
   .gridQuienesSomos {
     grid-template-columns: auto;
