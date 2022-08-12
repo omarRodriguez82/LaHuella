@@ -13,6 +13,7 @@
   grid-area: contenedorUno;
     img{
       width: 99%;
+      border-radius: 1rem;
     }
 }
 
@@ -33,9 +34,9 @@
 
 .listaProductos{
   grid-area: listaProductos;
-ul{ 
+  ul{ 
   text-align: center;
-  a{
+    a{
     float:left;
     width: 90%;
     margin: 0.25rem;
@@ -51,7 +52,7 @@ ul{
         transition: 200ms;
       } 
     }  
-}
+  }
 }
 
 .imagenBolsa{

@@ -9,22 +9,21 @@
 }
 
 .contactoForm{
-  grid-area: contactoForm;
-  
+  grid-area: contactoForm;  
   .fieldsetContacto{
     margin: 1rem;
     padding: 1rem;
     border: 0.15rem solid nth($listas, 1);
-    border-radius: 1.5rem;
-    .legendContacto{
+    border-radius: 1rem;
+    h1{
       font-size: 2rem;
-      color: black;
+      color: nth($listas, 1);
       text-align: center;
       padding: 0.3rem;}
     .tituloCampoContacto{
       font-size: 1rem;  
-      color: black;}
-    .inputContacto{
+      color: black;} 
+    .inputContacto{      
       font-size: 1rem;
       padding: 0.5rem;
       margin: 0.5rem 0rem;
@@ -38,7 +37,7 @@
         color: white;
         background-color: nth($listas, 1);
         border: none;
-        border-radius: 0.75rem;
+        border-radius: 1rem;
         transition: 1s;
         &:hover{
           transform: scale(1.1);
@@ -58,12 +57,13 @@
   grid-area: contactoInfo;
   margin: 1rem;
   border: 0.15rem solid nth($listas, 1);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   h2{
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
     margin-top: 1rem;
+    color: nth($listas,1);
   }
   h3{
     font-size: 1.2rem;
@@ -89,12 +89,12 @@
 
 .contactoMapa{
   grid-area: contactoMapa;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem;
     iframe{
   width: 100%;
   height: 100%;
-  border-radius: 1.5rem;
-}
+  border-radius: 1rem;
+  }
 }
 
 

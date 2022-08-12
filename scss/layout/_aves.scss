@@ -1,4 +1,8 @@
-/*--- Bootstrap: full aves.html y header full sitio---*/
+/*--- Aves Full Bootstrap ---*/
+
+.carousel-inner{
+  border-radius: 1rem;
+}
 
 .tituloAves{
   color: nth($listas, 1);

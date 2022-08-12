@@ -1,7 +1,7 @@
-/*--- Header Full Bootstrap ---*/
+/*--- Header Bootstrap ---*/
 
 .menu-bootstrap{
-  background-color:  nth($listas, 1);
+  background-color: nth($listas, 1);
 }
 
 .logoHamb{
@@ -22,7 +22,7 @@
 .imgHeaderBootstrap{
   img{ 
     width: 30vh;
-}
+  }
 }
 
 .navbar-nav{

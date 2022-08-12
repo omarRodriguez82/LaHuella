@@ -1,3 +1,5 @@
+/*-- Extends --*/
+
 %tarjetasFooter{
   height: 12rem;
     ul{ padding: 0;
@@ -10,4 +12,30 @@
   padding: 0.5rem;
   color: nth($listas, 2);
   text-align: center;
+}
+
+%botonesCarruIndex{
+  a{
+    color: white;
+    font-size: 2rem;      
+    font-weight: bold;
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+}
+
+%imagenesIndex{
+  img{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+  }
+}
+
+%imgQuienesSomos{
+  img{
+    width: 100%;
+    padding: 0.5rem; 
+    border-radius: 1.5rem;   
+  }
 }

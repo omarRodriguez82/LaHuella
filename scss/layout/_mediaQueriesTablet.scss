@@ -8,15 +8,6 @@
   .menu-bootstrap-inicio{
     background-color: nth($listas, 4);
   }
-
-  .gridInicio{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "textoVeterinario"
-                         "imgVeterinario"
-                         "textoBalanceados"
-                         "imgBalanceados";
-  }
 }
 
 /*--- Media Queries Tablet 2---*/
@@ -29,15 +20,6 @@
 
   .menu-bootstrap-inicio{
     background-color: nth($listas, 6);
-  }
-
-  .gridInicio{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "textoVeterinario"
-                         "imgVeterinario"
-                         "textoBalanceados"
-                         "imgBalanceados";
   }
 
   .menu-bootstrap{
@@ -54,29 +36,12 @@
 
   .gridQuienesSomos{
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "contenedorUno"
                          "contenedorDos"
                          "contenedorCuatro"
-                         "contenedorTres"
-                         "contenedorSeis"
-                         "contenedorCinco";
+                         "contenedorTres";
   }
-
-  .contenedorSeis{
-    display: none;
-  }
-
-
-  /*--- galeria Index ---*/
-
-  .galeriaIndex{   
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "vacas cerdos caballos" 
-                         "conejos aves alfalfa";
-  }
-
 
   /*--- Productos ---*/
 
@@ -93,15 +58,14 @@
     grid-template-areas: "listaProductos"
                          "imagenBolsa"
                          "analisis";
-  }
-
-  .listaProductos{
-    ul{ 
-      a{
-        padding: 0.3rem;    
-        }  
+    .listaProductos{
+      ul{ 
+        a{
+          padding: 0.3rem;    
+          }  
+      }
     }
-  }
+  }  
 
   /*--- Contacto ---*/
   .gridContacto{
@@ -112,11 +76,4 @@
                          "contactoInfo"
                          "contactoMapa";
   }
-
-  /*--- Footer ---*/
-  
-  .divLogoFooter{
-    display: none;
-  }
-
 } 
