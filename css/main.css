@@ -13,9 +13,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "header"
- "main"
- "footer"; }
+  grid-template-areas: "header" "main" "footer"; }
 
 header {
   grid-area: header; }
@@ -78,7 +76,7 @@ footer {
 .menu-bootstrap {
   background-color: rgba(170, 136, 84, 0.89); }
 
-.logoHamb {
+.logoHamb, .dropdownHeader {
   display: none; }
 
 .menu-items-bootstrap {
@@ -90,9 +88,15 @@ footer {
     font-size: 1.1rem;
     text-align: center; }
 
+.tituloDropdown a {
+  color: white; }
+
+.itemsDropdown a {
+  color: #48341a; }
+
 .imgHeaderBootstrap img {
-  min-width: 26vh;
-  max-width: 26vh; }
+  min-width: 25vh;
+  max-width: 25vh; }
 
 .navbar-nav {
   align-items: center;
@@ -114,8 +118,7 @@ footer {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-template-areas: "contenedorUno contenedorDos"
- "contenedorTres contenedorCuatro"; }
+  grid-template-areas: "contenedorUno contenedorDos" "contenedorTres contenedorCuatro"; }
 
 .contenedorUno {
   grid-area: contenedorUno;
@@ -153,8 +156,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "contactoForm contactoInfo"
- "contactoForm contactoMapa"; }
+  grid-template-areas: "contactoForm contactoInfo" "contactoForm contactoMapa"; }
 
 .contactoForm {
   grid-area: contactoForm; }
@@ -422,14 +424,18 @@ footer ul i, footer ul a {
 
 /*--- Media Queries Tablet 1---*/
 @media screen and (min-width: 992px) and (max-width: 1450px) {
-  .facebook, .instagram, .twitter, .inicio {
+  .facebook, .instagram, .inicio {
     display: none; }
   .menu-bootstrap-inicio {
-    background-color: rgba(170, 136, 84, 0.3); } }
+    background-color: rgba(170, 136, 84, 0.3); }
+  .itemsHeader {
+    display: none; }
+  .dropdownHeader {
+    display: block; } }
 
 /*--- Media Queries Tablet 2---*/
 @media screen and (max-width: 991px) {
-  .facebook, .instagram, .twitter, .logoFooterBootstrap, .divLogoFooter, .imagen-footer, .imgHeaderBootstrap {
+  .facebook, .instagram, .logoFooterBootstrap, .divLogoFooter, .imagen-footer, .imgHeaderBootstrap {
     display: none; }
   .menu-bootstrap-inicio {
     background-color: rgba(170, 136, 84, 0.75); }
@@ -443,22 +449,16 @@ footer ul i, footer ul a {
   .gridQuienesSomos {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "contenedorUno"
- "contenedorDos"
- "contenedorCuatro"
- "contenedorTres"; }
+    grid-template-areas: "contenedorUno" "contenedorDos" "contenedorCuatro" "contenedorTres"; }
   /*--- Productos ---*/
   .gridProductos {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "contenedorUno"
- "contenedorDos"; }
+    grid-template-areas: "contenedorUno" "contenedorDos"; }
   .gridProductos2 {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "listaProductos"
- "imagenBolsa"
- "analisis"; }
+    grid-template-areas: "listaProductos" "imagenBolsa" "analisis"; }
     .gridProductos2 .listaProductos ul a {
       padding: 0.3rem; }
   /*--- Contacto ---*/
@@ -466,9 +466,7 @@ footer ul i, footer ul a {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "contactoForm"
- "contactoInfo"
- "contactoMapa"; } }
+    grid-template-areas: "contactoForm" "contactoInfo" "contactoMapa"; } }
 
 /*--- Media Queries Mobile---*/
 @media screen and (max-width: 576px) {
@@ -477,7 +475,6 @@ footer ul i, footer ul a {
   .gridQuienesSomos {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "contenedorUno"
- "contenedorCuatro"; }
+    grid-template-areas: "contenedorUno" "contenedorCuatro"; }
   .contenedorDos, .contenedorTres {
     display: none; } }

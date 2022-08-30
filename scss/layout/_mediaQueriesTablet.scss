@@ -1,12 +1,20 @@
 /*--- Media Queries Tablet 1---*/
 
 @media screen and (min-width: 992px) and (max-width: 1450px){
-  .facebook, .instagram, .twitter, .inicio{
+  .facebook, .instagram, .inicio{
     display: none;
   }
 
   .menu-bootstrap-inicio{
     background-color: nth($listas, 4);
+  }
+
+  .itemsHeader{
+    display: none;
+  }
+
+  .dropdownHeader{
+    display: block;
   }
 }
 
@@ -14,7 +22,7 @@
 
 @media screen and (max-width: 991px){
 
-  .facebook, .instagram, .twitter, .logoFooterBootstrap, .divLogoFooter, .imagen-footer, .imgHeaderBootstrap{
+  .facebook, .instagram, .logoFooterBootstrap, .divLogoFooter, .imagen-footer, .imgHeaderBootstrap{
     display: none;
   }
 

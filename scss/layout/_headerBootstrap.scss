@@ -4,7 +4,7 @@
   background-color: nth($listas, 1);
 }
 
-.logoHamb{
+.logoHamb, .dropdownHeader{
   display: none;
 }
 
@@ -19,10 +19,23 @@
     }
 }
 
+.tituloDropdown{
+  a{
+    color: white;
+  }
+}
+
+.itemsDropdown{
+  a{
+    color: nth($listas, 2);
+  }
+  
+}
+
 .imgHeaderBootstrap{
   img{ 
-    min-width: 26vh;
-    max-width: 26vh;
+    min-width: 25vh;
+    max-width: 25vh;
   }
 }
 
